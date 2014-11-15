@@ -9,13 +9,8 @@ acrexentar mais restricoes OCL nos packages, e rever o ciclo de vida das prescri
 
 -----Parte3------
 a) falta isto :
-Regarding	the	Prescriptions'	Central	System,	consider	separate	components	for	the	
-National	Database	of	Prescriptions	(BDNP)	and	the	Prescription	Registration	Web	Service.
-Indicate	 also	 external	 components	 (from	 external	 systems)	 with	 which	 the	 prescribing	
-applications	or	the	prescriptions'	central	system	have	to	interact.	Regarding	the	interfaces,	
-you	only	have	to	name	them	(you	do	not	need	to	describe	their	operations).
-ver antigos slides prof
-
+	In	the	'notes'	field,	write	a	small	description	for	each	component	
+and	 interface do diagrama de baixo. E ver se está tudo bem.
 
 
 b)Ver se é isto o que é suposto ter .
@@ -26,4 +21,10 @@ acabar isto:
 the	 "notes"	 field)	 for	 each	 node	 and	 artifact.
 
 
-c) falta comecar
+c) In	 the	 component	 view,	 create	 a	 separate	 component	 diagram	 to	 relate	 artifacts	 and	
+components with	the	«manifest»	dependency.	
+
+ver se são só akeles 2
+
+
+d)
