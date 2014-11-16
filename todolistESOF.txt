@@ -28,3 +28,17 @@ ver se são só akeles 2
 
 
 d)
+Indicate	(with	notes in	the	diagrams)	the	architectural	patterns that	are	applicable	to	this	
+system (see	theoretical	classes):
+
+tenho de escolher de entre estes:
+Model-view-controller (MVC) 
+• For interactive processing 
+Pipes and filters (or data flow) 
+• For batch processing 
+ Layered architecture 
+• For complex systems with functionalities at ≠ levels of abstraction 
+ Repositories (data centric) 
+• For accessing & manipulating shared data by multiple subsystems 
+ Client-server and N-tier systems 
+• For accessing shared data and resources from multiple locations 
