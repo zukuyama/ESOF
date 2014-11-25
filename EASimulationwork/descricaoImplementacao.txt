@@ -1,0 +1,152 @@
+how
+you
+implemented
+each
+of
+the
+requested
+changes;
+
+
+################################AAAAAAAAAAA##################
+No Seconds Operation:Display na parte do behavioR
+
+acrexentei isto tudo:
+
+if(sim.hours< 10)
+{
+     sim.hoursChar= "0" + sim.hours;
+}
+else
+{
+     sim.hoursChar="" +  sim.hours;
+}
+
+
+if(sim.seconds < 10)
+{
+     sim.seconds = "0" + sim.seconds;
+}
+else
+{
+     sim.seconds = sim.seconds;
+}
+
+e modifiquei isto:
+
+if (sim.viewSeconds)
+{
+    sim.lcd =  sim.hoursChar + ":" + sim.minutesChar + ":" + sim.seconds + " " + sim.ampm;
+}
+else
+{
+     sim.lcd = sim.hoursChar + ":" + sim.minutesChar + " "+ sim.ampm;
+}
+
+alterando de sim.hours para sim.hoursChar
+
+##############################################################
+
+##########################BBBBBBBBBBBBBBBBB#################
+ adicionou-se 2 botões no ClockUserInterface, um chamado Stop e o outro Resume com
+acrexentando uma tag chamada onClick em cada um dos botoes associada ao sinal Stop e Resume
+respectivamente.
+
+De seguida na "Clock View" adicionou-se o estado Stop que é atingido apartir de Seconds quando se 
+clica no botão Stop , o que faz com que o relogio pare .Sendo retomado após o click no botão
+Resume, passando do estado Stop para o Seconds
+########################################
+
+#########################C#####################
+Adicionamos 4 editcontrol elements no ClockFace para servirem de mostradores das horas minutos segundos e AM/PM
+Editando tambem a Seconds Operation: Display para associar cada um dos valores : horas, minutos, segundos e AM/PM à
+sua respectiva janela de display colocando os segundos sempre visiveis.
+
+#############################d#################
+Adicionamos isto ás "transition Properties" do "Set Display":
+
+if(dialog.ClockFace.LCDseconds.Show == true){
+dialog.ClockFace.LCDseconds.Show =false;
+}
+else 
+{
+dialog.ClockFace.LCDseconds.Show = true;
+}
+
+#######################
+
+
+##the difficulties you faced and the mistakes you did in implementing the changes;
+
+
+Foi relativamente fácil após ler atentamente o pdf "State Machine Simulation".
+
+
+##what
+you
+learned
+about
+the
+model
+simulation
+capabilities
+of
+Enterprise
+Architect
+(you
+may
+refer
+to
+the
+items
+described
+in
+"What
+you
+will
+learn"
+in
+the
+above
+referenced
+PDF);
+
+Aprendemos a lidar melhor com a StateMachine quer com as suas operações quer transições.
+E sobre a criação de botões e como usar os signals e triggers associados.
+
+#your
+opinion
+about
+the
+strengths
+and
+weaknesses
+of
+the
+model
+simulation
+capabilities
+of
+Enterprise
+Architect.
+A principal vantagem é o efeito visual que nos permite seguir as ao longo dos estados da state machine.
+Não conseguimos encontrar uma desvantagem durante o tempo em que o utilizamos.
+
+#the
+time
+spent
+by
+each
+of
+the
+group
+members
+on
+doing
+this
+task.
+
+2 horas (fizemos em conjunto).
+
+
+
